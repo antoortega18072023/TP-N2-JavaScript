@@ -2,12 +2,11 @@
 let cadenaConcatenada = "";
 
 do {
+  let nuevaCadena = prompt(
+    "Ingrese una cadena de texto (o presione 'cancelar' para salir):"
+  );
 
-    let nuevaCadena = prompt("Ingrese una cadena de texto (o presione 'cancelar' para salir):");
-
-    cadenaConcatenada += nuevaCadena + "-";
-
+  cadenaConcatenada += nuevaCadena + "-";
 } while (confirm("¿Desea ingresar otra cadena de texto?"));
 
-// Mostrar las cadenas concatenadas (sin el último guión)
 alert("Cadenas concatenadas: " + cadenaConcatenada);
