@@ -12,5 +12,22 @@
 
 
 
-// Input:  40773821 
-// Output: ‘L’
+do {
+    let num = parseInt(prompt("ingrese su documento"));
+
+    if (isNaN(num) || num === null) {
+        alert("Por favor, introduce un número válido.");
+    }
+
+    if (num < 0 || num > 99999999) {
+        alert("El número de DNI debe estar entre 0 y 99999999.");
+    }
+
+   const letrasDNI = "TRWAGMYFPDXBNJZSQVHLCKE";
+   let resto = num%23;
+   let letracalculada=letrasDNI.charAt(resto);
+
+   alert("la letra del DNI " + num + " es: " + letracalculada);
+
+  } while (confirm("¿desea ingresar otro DNI?"))
+
