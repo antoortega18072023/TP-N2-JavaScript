@@ -22,9 +22,9 @@ const nombre3 = prompt("Ingrese el tercer nombre:");
             // Determinar el nombre correspondiente a la edad máxima
 let nombreDelMayor;
 
-            if (edadMaxima === numEdad1) {
+            if (edadMaxima === edad1) {
                 nombreDelMayor = nombre1;
-            } else if (edadMaxima === numEdad2) {
+            } else if (edadMaxima === edad2) {
                 nombreDelMayor = nombre2;
             } else {
                 nombreDelMayor = nombre3;
